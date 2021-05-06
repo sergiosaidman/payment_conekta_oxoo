@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report 
+            id="action_report_payment_transaction"
+            string="Oxoo Payment receipt"
+            model="payment.transaction" 
+            report_type="qweb-pdf"
+            file="payment_conekta_oxoo.report_payment_transaction" 
+            name="payment_conekta_oxoo.report_payment_transaction"
+            print_report_name="(object.conekta_oxxo_reference and '%s' % (object.conekta_oxxo_reference)) or '%s' % (object.reference)"
+        />
+    </data>
+</odoo>
